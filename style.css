@@ -1,0 +1,136 @@
+body {
+    background-image: url(img/N8i8.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+div.board{
+    position: relative;
+    display:flex;
+    width: 60%;
+    height: 55%;
+    left: 12%;
+    top: 5%;
+    flex-flow: wrap row;
+    justify-content: space-around;  
+    justify-content: center;
+}
+
+div.board img{
+    display:none;
+    width: 100%;
+    height:100%;
+    border-radius: 8px;
+}
+
+div.board div.cellule{
+    width: 100px;
+    height: 160px;
+    border:3px solid gray;
+    border-radius:8px;
+    background-image: url(img/back.png);
+    cursor:pointer;
+    text-align:center;
+    color:white;
+    font-size:120px;
+    line-height:160px;
+    vertical-align: center;
+    margin: 10px;
+}
+.load img {
+    height: 150px;
+}
+.load {
+    position: absolute;
+    top: 40vh;
+    left: 47vw;
+}
+.preload {
+    margin: -9px;
+    background-color: #10181e;
+    height: 110vh;
+    width: 110vw;
+    position: absolute;
+    z-index: 2000000;
+  }
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 1s linear 3 both;
+	        animation: rotate-scale-up 1s linear 3 both;
+}
+@keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+audio {
+    margin-top: 10%;
+}
+@media screen and (max-width: 1399px){
+    div.board{
+        position: relative;
+        display:flex;
+        width:65%;
+        height: 55%;
+        left: 10%;
+        top: 6%;
+        flex-flow: wrap row;
+        justify-content: space-around;  
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 1000px){
+    div.board{
+        width: 80%;
+        height: 55%;
+        left: 7%;
+        top: 6%;
+    }
+    .load {
+        position: absolute;
+        top: 40vh;
+        left: 42vw;
+    }
+    .preload {
+        margin: -9px;
+        height: 100vh;
+        width: 110vw;
+        z-index: 2000000;
+      }
+}
+@media screen and (max-width: 500px){
+    body {
+        height: 150vh;
+        width: 100vw;
+    }
+    div.board {
+        width: 100%;
+        height: 55%;
+        left: 1%;
+        top: 1%;
+    } 
+    .load {
+        position: absolute;
+        top: 40vh;
+        left: 35vw;
+    }
+    .preload {
+        margin: -9px;
+        height: 160vh;
+        width: 110vw;
+        z-index: 2000000;
+      }
+}

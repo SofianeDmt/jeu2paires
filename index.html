@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu2carte</title>
+</head>
+<body>
+    <div class="preload">
+        <div class="load">
+            <img class="rotate-scale-up" src="img/logowitcher.svg" alt="">
+        </div>
+    </div>
+    <div class="board">
+
+        
+        <div class="board">    
+            
+            
+            <div class="cellule" id="n1">
+                <img src="img/1.png">
+            </div>
+            <div class="cellule" id="n2">
+                <img src="img/1.png">
+            </div>
+            <div class="cellule" id="n3">
+                <img src="img/2.png">
+            </div>
+    
+            <div class="cellule" id="n4">
+                <img src="img/2.png">
+            </div>
+            <div class="cellule" id="n5">
+                <img src="img/3.png">
+            </div>
+            <div class="cellule" id="n6">
+                <img src="img/3.png">
+            </div>
+    
+            <div class="cellule" id="n7">
+                <img src="img/4.png">
+            </div>
+            <div class="cellule" id="n8">
+                <img src="img/4.png">
+            </div>
+            <div class="cellule" id="n9">
+                <img src="img/5.png">
+            </div>
+    
+            <div class="cellule" id="n10">
+                <img src="img/5.png">
+            </div>
+            <div class="cellule" id="n11">
+                <img src="img/6.png">
+            </div>
+            <div class="cellule" id="n12">
+                <img src="img/6.png">
+            </div>
+    
+            <div class="cellule" id="n13">
+                <img src="img/7.png">
+            </div>
+            <div class="cellule" id="n14">
+                <img src="img/7.png">
+            </div>
+            <div class="cellule" id="n15">
+                <img src="img/8.png">
+            </div>
+            <div class="cellule" id="n16">
+                <img src="img/8.png">
+            </div>
+            
+            
+            <div class="music">
+                <audio controls autoplay>
+                    <source src="song/Gwentsong.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </div>
+    
+    <script>
+
+        const preloader = document.querySelector('.preload');
+setTimeout(() => {
+      preloader.style.display ='none';
+    }, 2000);
+
+        window.addEventListener("DOMContentLoaded",function(e){
+
+        new Game().initGame().resolution();
+    });
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>
